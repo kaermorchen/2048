@@ -16,8 +16,8 @@ export class Tile {
   setXY(x: number, y: number) {
     this.x = x;
     this.y = y;
-    this.tileElement.style.setProperty("--x", x);
-    this.tileElement.style.setProperty("--y", y);
+    this.tileElement.style.setProperty("--x", String(x));
+    this.tileElement.style.setProperty("--y", String(y));
   }
 
   setValue(value: number) {
